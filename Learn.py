@@ -310,7 +310,7 @@ if uploaded_file is not None:
     #st.write(type(t))
     #st.write(t)
     
-    f,call_sign, route, dep_airport, arr_airport, aircraft_model = parse(t) 
+    f, route, dep_airport, arr_airport, call_sign, aircraft_model = parse(t) 
    
     #col1, col2, col3 = st.columns([1,2,2], gap="large")
   
@@ -325,6 +325,7 @@ if uploaded_file is not None:
             m = map_route(f)
             st_data = st_folium(m, height=220)
         with col2:
+            st.write(call_sign)
             st.write(aircraft_model)
             st.write(dep_airport)
             st.write(arr_airport)
