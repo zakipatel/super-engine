@@ -12,8 +12,8 @@ from pycontrails.datalib.ecmwf import ERA5
 from pycontrails.models.cocip import Cocip
 from pycontrails.models.humidity_scaling import ConstantHumidityScaling
 
-st.markdown("### Flight Plan Contrail Measurement Tool") 
-st.sidebar.markdown("# Compute ❄️")
+st.markdown("### Contrail Measurement Tool - Hackathon") 
+#st.sidebar.markdown("# Compute ❄️")
 
 #defaults
 engine_efficiency_input = 0.45
