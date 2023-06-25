@@ -41,7 +41,7 @@ uploaded_file = st.file_uploader("Upload a ARINC 633 XML file")
 import folium 
 
 def map_route(waypoints): 
-    m = folium.Map(width=500, height=400)
+    m = folium.Map(width=240, height=140)
 
     polyline = []
     lat = waypoints['latitude']
