@@ -312,7 +312,7 @@ if uploaded_file is not None:
     
     #map 
     m = map_route(f.dataframe)
-    st_data = st_folium(m, width=725)
+    st_data = st_folium(m, width=250)
     #st.write(type(m))
       
     
