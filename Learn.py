@@ -371,8 +371,9 @@ if uploaded_file is not None:
                    time=t,
                    variables=Cocip.met_variables + Cocip.optional_met_variables,
                    pressure_levels=pressure_levels,
+                   url='https://cds.climate.copernicus.eu/api/v2', key='204313:423417aa-a534-4646-9728-a7f37618da8c'
                 )
-                era5sl = ERA5(time=t, variables=Cocip.rad_variables)
+                era5sl = ERA5(time=t, variables=Cocip.rad_variables, url='https://cds.climate.copernicus.eu/api/v2', key='204313:423417aa-a534-4646-9728-a7f37618da8c')
             
                 met = era5pl.open_metdataset()
                 rad = era5sl.open_metdataset()
