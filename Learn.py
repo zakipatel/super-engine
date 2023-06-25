@@ -325,7 +325,7 @@ if uploaded_file is not None:
             m = map_route(f)
             st_data = st_folium(m, height=220)
         with col2:
-            st.write(ac.aircraft_model)
+            st.write(aircraft_model)
             st.write(dep_airport)
             st.write(arr_airport)
             st.write(route)
